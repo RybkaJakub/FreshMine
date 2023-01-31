@@ -2048,8 +2048,13 @@ section {
   color: #fff;
 }
 
-#skyblock{
-  margin-top: 20px;
+.color{
+  color: rgba(248, 190, 64);
+  font-weight: bold;
+}
+
+.skyblock{
+  margin-top: 40px;
 }
 
 .discord img{
