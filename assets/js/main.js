@@ -291,22 +291,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-function initServerData(serverIp){
-  fetch('https://api.mcsrvstat.us/2/'+serverIp)
+function initServerData(){
+  fetch('https://api.minetools.eu/ping/chicken.freshmine.cz/25565')
     .then(response => response.json())
     .then(data => handleServerStatus(data));
 
     function handleServerStatus(data){
-      if(data.status=='error'){
-          playerCounter.innerHTML = "Server je Offline";
-          on.innerHTML = "";
-          onhraci.innerHTML = "";
-          return false;
-      }
       const playerCounter = document.getElementById("player-count");
       playerCounter.innerHTML = data.players.online;
       console.log(playerCounter);
     }
 }
-
-initServerData("chicken.freshmine.cz");
+initServerData();

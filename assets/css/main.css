@@ -1916,6 +1916,7 @@ section {
   width: 100%;
   position: relative;
   background: url("../img/r1.png");
+  background-repeat: no-repeat;
   padding: 60px 0 0 0;
 }
 
