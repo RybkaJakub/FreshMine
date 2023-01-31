@@ -8,9 +8,6 @@ function sleep(milliseconds) {
 
 async function sendContact(ev) {
     ev.preventDefault();
-
-    const senderEmail = document
-        .getElementById('emailInput').value;
     const senderMessage = document
         .getElementById('hl1Input').value;
     const senderMessage1 = document
@@ -43,11 +40,8 @@ async function sendContact(ev) {
     const webhookBody = {
         embeds: [{
             title: 'Vanilla Whitelist',
+            color: 16759552,
             fields: [{
-                    name: 'Email',
-                    value: senderEmail
-                },
-                {
                     name: '1) Tvůj herní nick (Pepa_z_Depa13)',
                     value: senderMessage
                 },
