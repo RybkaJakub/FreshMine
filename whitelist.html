@@ -35,9 +35,12 @@
             href="mailto:freshmine@seznam.cz">freshmine@seznam.cz</a></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="https://www.tiktok.com/@mc.freshmine.cz" class="tiktok" target="_blank"><i class="bi bi-tiktok"></i></a>
-        <a href="https://www.facebook.com/utilitymine" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-        <a href="https://www.instagram.com/mc.freshmine.cz/" class="instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mc.freshmine.cz" class="tiktok" target="_blank"><i
+            class="bi bi-tiktok"></i></a>
+        <a href="https://www.facebook.com/utilitymine" class="facebook" target="_blank"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/mc.freshmine.cz/" class="instagram" target="_blank"><i
+            class="bi bi-instagram"></i></a>
       </div>
     </div>
   </section>
@@ -67,74 +70,109 @@
           <p id="on">Momentálně máme <span id="player-count" class="color">0</span> Hráčů Online</p>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="./assets/img/FreshMine-Logo-Vanilla.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="./assets/img/FreshMine-Logo-Vanilla.png" class="img-fluid" alt="" data-aos="zoom-out"
+            data-aos-delay="100">
         </div>
       </div>
     </div>
   </section>
   <main id="main" class="portfolio sections-bg">
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header" id="vanilla">
+          <h2>Základní Informace</h2>
+          <p class="souhlas">❗️Podáním přihlášky souhlasíš s těmito podmínkami❗️</p>
+          <ul>
+            <li>• Četl jsem pravidla serveru, rozumím jim a budu je dodržovat.</li>
+            <li>• Souhlasím s plnou spoluprací s členy AT při problému.</li>
+            <li>• Souhlasím se slušným chováním a vystupováním na tomto serveru.</li>
+            <li>• Souhlasím s tím, že uvedené údaje jsou pravdivé a upřímné.</li>
+          </ul>
+          <div id="pravidla" class="pravidla">
+            <b>PRAVIDLA</b>
+            <li>
+              <ul>1) Hráč je povinen respektovat vedení serveru.</ul>
+              <ul>2) Není tolerován rasismus, urážky, pomluvy, nacizmus a jiná hnutí. Žádné/ý spamování a nevhodné zprávy</ul>
+              <ul>3) Je přísně zakázáno využívat jakýchkoliv bugů na serveru. Pokud se vyskytne jakýkoliv bug hráči jsou povinni okamžitě nahlásit daný problém. V případě, že i nadále bude hráč tohoto bugu zneužívat bude mu udělen permanentní ban.</ul>
+              <ul>4) Je zakázáno hledat chyby (mezery) v pravidlech. Využívání těchto chyb (mezer) je přísně zakázáno a trestá se banem. Co není zmíněno zde v pravidlech, neznamená, že je povoleno.</ul>
+              <ul>5) PvP není povoleno pokud se hráči nedomluví jinak. Tzn. že když se 2 hráči domluví že si dají 1v1 a jeden z nich přijde o věci. Admin Team nemá v povinnosti tyto věci nahrazovat, nejedná-li se o chybu.</ul>
+              <ul>6) Je zakázáno jakkoliv obcházet udělené tresty, platí pro mute a ban. V případě porušení a následném zjištění bude hráči udělen okamžitě vyšší trest bez možnosti zrušení.</ul>
+              <ul>7) Zákaz používání programů na zvýhodnění nad ostatními hráči.</ul>
+              <ul>8) Žádný grief, krádeže a poškozování ostatních hráčů, jakož i narušování jejich hraní na serveru.</ul>
+              <ul>9) Žádné/ý spamování, rasismus a nevhodné zprávy.</ul>
+              <ul>10) Žádný reklamy na jiné servery, propagace či prodej služeb a věcí netýkající se serveru a hry.</ul>
+              <ul>11) Žádné stavení domů, farem, obchodů apod. v rozmezí 1000 bloků od lokace 0 , 153 , 0, není-li vyhláškou stanoveno jinak.</ul>
+              <ul>12) Zákaz darování věcí novým hráčům (Maximálně iron věci bez enchantů).</ul>
+            </li>
+          </div>
+          <button onclick="pravidla();" class="btn" id="btn-pravidla">Zobrazit Pravidla</button>
+        </div>
+      </div>
+    </section>
     <div style="display:flex;width:100%;" class="form">
-        <form onsubmit="" id="userform">
-            <div style="width:100%;">
-                <p>Nick v MC</p>
-                <input type="text" id="hl1Input" placeholder="Pepa_z_Depa13">
-            </div>
-            <div style="width:100%;">
-                <p>Tvůj skutečný věk</p>
-                <input type="number" id="hl2Input" value="14" min="10">
-            </div>
-            <div style="width:100%">
-                <p> Tvůj nick na discordu + Je povinnost být připojen na našem discordu <a href="https://disc.freshmine.cz/" target="_blank">LINK</a></p>
-                <input type="text" id="hl3Input" placeholder="Marco#3365">
-            </div>
-            <div style="width:100%;">
-                <p>Kdy jsi začal/a hrát Minecraft (verze postačí) a jak často hraješ?</p>
-                <input type="text"  id="hl4Input" placeholder="1.12.3 - 2 hodiny denně">
-            </div>
-            <div style="width:100%">
-                <p>Odkud jsi se o nás dozvěděl/a? popř. od koho?</p>
-                <input type="text" id="hl5Input" placeholder="Od kamaráda">
-            </div>
-            <div style="width:100%">
-                <p>Napiš něco málo o sobě např. své koníčky, jak trávíš volný čas, co tě baví apod. (alespoň 50 slov)</p>
-                <textarea class="form-control" id="hl6Input" rows="2" required minlength="80"></textarea>
-                <div id="errortext" style="display: none; color: red;">Musíte zadať aspoň 80 znakov.</div>
-            </div>
-            <div style="width:100%;">
-                <p>Hrál/a už jsi na nějakém vanilla serveru? Pokud ano, jak dlouho?</p>
-                <input type="text" id="hl7Input" placeholder="Ano - 3 měsíce">
-            </div>
-            <div style="width:100%">
-                <p>Jak plánuješ na serveru hrát? </p>
-              <input type="text" id="hl8Input" placeholder="Plánuji udělat redstone farmy a prodávat věci">
-            </div>
-            <div style="width:100%">
-                <p>Co uděláš, když umřeš a přijdeš o své věci?</p>
-                <input type="text" id="hl9Input" placeholder="Založím si ticket">            
-            </div>
-            <div style="width:100%;">
-                <p>Jak se zachováš, když ti začne někdo nadávat?</p>
-                <input type="text" id="hl10Input" placeholder="Začnu mu nadávat taky">
-            </div>
-            <div style="width:100%">
-                <p>Co uděláš, když ti někdo vleze na pozemek, začne griefovat (ničit stavby) a krást tvoje věci? </p>
-                <input type="text" id="hl11Input" placeholder="Půjdu k němu a zničím mu je taky">
-            </div>
-            <div style="width:100%">
-                <p>Dostal/a už jsi na nějakém serveru ban? Pokud ano tak za co?</p>
-                <input type="text" id="hl12Input" placeholder="Ano za cheaty">             
-            </div>
-            <div style="width:100%;">
-                <p>Napiš pár důvodů proč by jsi měl/a být přidán/a na whitelist</p>
-               <input type="text" id="hl13Input" placeholder="Jsem přátelský hráč který by se rád stal součástí komunity">
-            </div>
-            <div style="width:100%">
-                <p>Poznámky </p>
-                <input type="textarea" class="form-control" id="hl14Input">
-            </div>
-            <div id="error" style="display: none; color: red;">Vyplňte všetky otázky.</div>
-            <button type="submit" class="btn" onclick="">Odeslat žádost</button>
-        </form> 
+      <form onsubmit="" id="userform">
+        <div style="width:100%;">
+          <p>Nick v MC</p>
+          <input type="text" id="hl1Input" placeholder="Pepa_z_Depa13" required>
+        </div>
+        <div style="width:100%;">
+          <p>Tvůj skutečný věk</p>
+          <input type="number" id="hl2Input" value="14" min="10" required>
+        </div>
+        <div style="width:100%">
+          <p> Tvůj nick na discordu + Je povinnost být připojen na našem discordu <a href="https://disc.freshmine.cz/"
+              target="_blank">LINK</a></p>
+          <input type="text" id="hl3Input" placeholder="Marco#3365" required>
+        </div>
+        <div style="width:100%;">
+          <p>Kdy jsi začal/a hrát Minecraft (verze postačí) a jak často hraješ?</p>
+          <input type="text" id="hl4Input" placeholder="1.12.3 - 2 hodiny denně" required>
+        </div>
+        <div style="width:100%">
+          <p>Odkud jsi se o nás dozvěděl/a? popř. od koho?</p>
+          <input type="text" id="hl5Input" placeholder="Od kamaráda" required>
+        </div>
+        <div style="width:100%">
+          <p>Napiš něco málo o sobě např. své koníčky, jak trávíš volný čas, co tě baví apod. (alespoň 50 slov)</p>
+          <textarea class="form-control" id="hl6Input" rows="2" required minlength="80"></textarea>
+          <div id="errortext" style="display: none; color: red;">Musíte zadať aspoň 80 znakov.</div>
+        </div>
+        <div style="width:100%;">
+          <p>Hrál/a už jsi na nějakém vanilla serveru? Pokud ano, jak dlouho?</p>
+          <input type="text" id="hl7Input" placeholder="Ano - 3 měsíce" required>
+        </div>
+        <div style="width:100%">
+          <p>Jak plánuješ na serveru hrát? </p>
+          <input type="text" id="hl8Input" placeholder="Plánuji udělat redstone farmy a prodávat věci" required>
+        </div>
+        <div style="width:100%">
+          <p>Co uděláš, když umřeš a přijdeš o své věci?</p>
+          <input type="text" id="hl9Input" placeholder="Založím si ticket" required>
+        </div>
+        <div style="width:100%;">
+          <p>Jak se zachováš, když ti začne někdo nadávat?</p>
+          <input type="text" id="hl10Input" placeholder="Začnu mu nadávat taky" required>
+        </div>
+        <div style="width:100%">
+          <p>Co uděláš, když ti někdo vleze na pozemek, začne griefovat (ničit stavby) a krást tvoje věci? </p>
+          <input type="text" id="hl11Input" placeholder="Půjdu k němu a zničím mu je taky" required>
+        </div>
+        <div style="width:100%">
+          <p>Dostal/a už jsi na nějakém serveru ban? Pokud ano tak za co?</p>
+          <input type="text" id="hl12Input" placeholder="Ano za cheaty" required>
+        </div>
+        <div style="width:100%;">
+          <p>Napiš pár důvodů proč by jsi měl/a být přidán/a na whitelist</p>
+          <input type="text" id="hl13Input" placeholder="Jsem přátelský hráč který by se rád stal součástí komunity"
+            required>
+        </div>
+        <div style="width:100%">
+          <p>Poznámky </p>
+          <input type="textarea" class="form-control" id="hl14Input">
+        </div>
+        <div id="error" style="display: none; color: red;">Vyplňte všetky otázky.</div>
+        <button type="submit" class="btn">Odeslat žádost</button>
+      </form>
     </div>
   </main>
   <footer id="footer" class="footer">
@@ -148,6 +186,10 @@
       </div>
     </div>
   </footer>
+  <audio id="myAudio">
+  <source src="./assets/notifications/notification-sound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>

@@ -1,11 +1,3 @@
-function sleep(milliseconds) {
-    const date = Date.now();
-    let currentDate = null;
-    do {
-      currentDate = Date.now();
-    } while (currentDate - date < milliseconds);
-  }
-
 async function sendContact(ev) {
     ev.preventDefault();
     const senderMessage = document
@@ -122,8 +114,9 @@ async function sendContact(ev) {
 			title: "Úspěch",
 			message: "Přihláška byla odeslána"
 		});
+        playAudio()
         setTimeout(function() {
-            window.open('./index.html');
+            window.open('./index.html',"_self");
         }, 3500);
           
     } else {
@@ -137,6 +130,7 @@ async function sendContact(ev) {
 			title: "Chyba",
 			message: "Nastala chyba. Kontaktuj nás pomocí ticketu na discordu."
 		});
+        playAudio()
     }
 }
 
@@ -154,3 +148,17 @@ document.querySelector("form").addEventListener("submit", function(event) {
     sendContact(event);
 });
 
+function pravidla() {
+    var x = document.getElementById("pravidla");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
