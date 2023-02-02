@@ -18,22 +18,22 @@ ul{
     padding-bottom: 20px;
   }
 
-  ::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 7px;
     /* for vertical scrollbars */
     height: 7px;
     /* for horizontal scrollbars */
-  }
+}
   
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #212227;
-  }
+}
   
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--color-primary);
     height: 10px;
-  }
+}
   
-  ::-webkit-scrollbar-track-piece {
+::-webkit-scrollbar-track-piece {
     height: 30px;
-  }
+}
