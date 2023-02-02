@@ -302,4 +302,7 @@ function initServerData(){
       console.log(playerCounter);
     }
 }
-initServerData();
+window.onload = function () {
+  initServerData();
+}
+
