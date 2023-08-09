@@ -16,13 +16,13 @@ function initServerData(){
     initServerData();
     for (let i = 0; i < dataLen; i++) {
         if (lightdark != 'lightdark'){
-            data.[i].className = "light offline ";
+            data[i].className = "light offline ";
             lightdark = 'dark';
             console.log(data.[i].className)
             lightdark.log(data.[i].className)
         }
         else{
-            data.[i].className = "dark offline ";
+            data[i].className = "dark offline ";
             lightdark = 'light';
             console.log(data.[i].className)
             lightdark.log(data.[i].className)
