@@ -1,6 +1,6 @@
 var data = document.getElementsByClassName("light offline ")
 		let dataLen = data.length;
-		let lightdark = 'light';
+		let lightdark = true;
 
 		function
 			initServerData() {
@@ -16,15 +16,15 @@ var data = document.getElementsByClassName("light offline ")
 		window.onload = function () {
 			initServerData();
 			for (let i = 0; i < dataLen; i++) {
-				if (lightdark != 'lightdark') {
+				if (lightdark != true) {
 					data[i].className = "light offline ";
-					lightdark = 'dark';
+					lightdark = false;
 					console.log(data[i].className)
 					lightdark.log(data[i].className)
 				}
 				else {
 					data[i].className = "dark offline ";
-					lightdark = 'light';
+					lightdark = true;
 					console.log(data[i].className)
 					lightdark.log(data[i].className)
 				}
