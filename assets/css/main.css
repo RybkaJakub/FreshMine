@@ -1915,7 +1915,7 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: url("../img/minecraft_4k_hd_2.jpg.png");
+  background: url("../img/minecraft_4k_hd_2.jpg");
   background-repeat: no-repeat;
   padding: 60px 0 0 0;
 }
